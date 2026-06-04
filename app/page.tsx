@@ -1,9 +1,12 @@
 import Hero from '@/components/Hero'
 import Problem from '@/components/Problem'
+import Opportunity from '@/components/Opportunity'
 import Philosophy from '@/components/Philosophy'
+import AppMockup from '@/components/AppMockup'
 import System from '@/components/System'
+import Roadmap from '@/components/Roadmap'
 import Founder from '@/components/Founder'
-import EarlyAccess from '@/components/EarlyAccess'
+import TheBet from '@/components/TheBet'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -11,10 +14,13 @@ export default function Home() {
     <main>
       <Hero />
       <Problem />
+      <Opportunity />
       <Philosophy />
+      <AppMockup />
       <System />
+      <Roadmap />
       <Founder />
-      <EarlyAccess />
+      <TheBet />
       <Footer />
     </main>
   )

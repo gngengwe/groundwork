@@ -10,7 +10,7 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-[860px] mx-auto">
-        <p className="eyebrow text-gold mb-10 md:mb-14">Coming soon · Groundwork</p>
+        <p className="eyebrow text-gold mb-10 md:mb-14">Concept overview · Groundwork</p>
 
         <h1
           className="font-serif text-ash text-balance mb-8 md:mb-10"
@@ -33,16 +33,16 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#early-access"
+            href="#opportunity"
             className="inline-block bg-gold text-base px-9 py-4 font-sans font-medium text-sm tracking-wide hover:bg-gold/85 transition-colors duration-200"
           >
-            Get early access
+            See the concept ↓
           </a>
           <a
-            href="#how-it-works"
+            href="#roadmap"
             className="inline-block border border-ash/20 text-ash/65 px-9 py-4 font-sans font-medium text-sm tracking-wide hover:border-ash/40 hover:text-ash transition-colors duration-200"
           >
-            Learn how it works ↓
+            View the roadmap ↓
           </a>
         </div>
       </div>
