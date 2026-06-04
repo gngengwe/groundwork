@@ -18,7 +18,7 @@ export default function Problem() {
         </h2>
 
         <div
-          className="space-y-6 text-ash/72 font-sans leading-[1.75]"
+          className="space-y-6 text-ash/90 font-sans leading-[1.75]"
           style={{ fontSize: 'clamp(1rem, 1.6vw, 1.125rem)' }}
         >
           <p>

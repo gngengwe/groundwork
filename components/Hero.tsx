@@ -24,7 +24,7 @@ export default function Hero() {
         </h1>
 
         <p
-          className="text-ash/60 font-sans text-balance mb-12 md:mb-14 max-w-[600px] mx-auto leading-relaxed"
+          className="text-ash/80 font-sans text-balance mb-12 md:mb-14 max-w-[600px] mx-auto leading-relaxed"
           style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)' }}
         >
           Groundwork is a simplicity-first fitness system for people who want to stop

@@ -41,7 +41,7 @@ export default function Founder() {
             </h2>
 
             <div
-              className="space-y-5 text-ash/72 font-sans leading-[1.75]"
+              className="space-y-5 text-ash/90 font-sans leading-[1.75]"
               style={{ fontSize: 'clamp(1rem, 1.5vw, 1.1rem)' }}
             >
               <p>

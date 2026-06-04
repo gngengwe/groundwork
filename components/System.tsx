@@ -60,7 +60,7 @@ export default function System() {
               >
                 {name}
               </h3>
-              <p className="text-ash/75 font-sans text-sm md:text-base leading-relaxed">
+              <p className="text-ash/90 font-sans text-sm md:text-base leading-relaxed">
                 {body}
               </p>
             </div>
