@@ -8,10 +8,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        base: '#0F0D08',
-        surface: '#1A1814',
-        'surface-hi': '#242018',
-        border: '#2D2922',
+        base: '#0D0D0B',
+        surface: '#161614',
+        'surface-hi': '#1E1E1B',
+        border: '#2A2A27',
         ash: '#F0EDE8',
         muted: '#857E75',
         gold: '#C8A96E',
