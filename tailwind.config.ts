@@ -8,15 +8,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: '#F7F4EF',
-        stone: '#EDE9E1',
-        pebble: '#D4CEC5',
-        ink: '#1C1917',
-        muted: '#7A7470',
-        earth: '#8B6B44',
-        'earth-light': '#F2EBE0',
-        dark: '#111009',
-        'dark-mid': '#1A1712',
+        base: '#0F0D08',
+        surface: '#1A1814',
+        'surface-hi': '#242018',
+        border: '#2D2922',
+        ash: '#F0EDE8',
+        muted: '#857E75',
+        gold: '#C8A96E',
+        'gold-dim': '#9B7B4E',
       },
       fontFamily: {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],

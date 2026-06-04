@@ -7,33 +7,33 @@ const pillars = [
   {
     n: '02',
     name: 'Simple Teaching',
-    body: 'Understand why each thing works. When nothing feels random, nothing feels pointless — and you stop second-guessing yourself.',
+    body: "Understand why each thing works. When nothing feels random, nothing feels pointless — and you stop second-guessing yourself.",
   },
   {
     n: '03',
     name: 'Simple Fuel',
-    body: 'Eat in a way that supports the work without obsessing, calorie-counting, or giving up anything you actually enjoy.',
+    body: "Eat in a way that supports the work without obsessing, calorie-counting, or giving up anything you actually enjoy.",
   },
   {
     n: '04',
     name: 'Repeatable Weeks',
-    body: 'Build a routine that survives real life — holidays, hard weeks, travel, bad sleep, and the other ten things that usually derail you.',
+    body: "Build a routine that survives real life — holidays, hard weeks, travel, bad sleep, and the other ten things that usually derail you.",
   },
   {
     n: '05',
     name: 'The Reset Rule',
-    body: 'Learn how to restart after any break, setback, or gap — without shame, without starting from zero, without the spiral.',
+    body: "Learn how to restart after any break, setback, or gap — without shame, without starting from zero, without the spiral.",
   },
 ]
 
 export default function System() {
   return (
-    <section id="system" className="bg-stone section-pad">
+    <section id="system" className="bg-surface-hi section-pad">
       <div className="wrap">
         <div className="mb-14 md:mb-20">
           <p className="eyebrow mb-6">The system</p>
           <h2
-            className="font-serif text-ink text-balance max-w-[22ch]"
+            className="font-serif text-ash text-balance max-w-[22ch]"
             style={{
               fontSize: 'clamp(1.75rem, 3.5vw, 3rem)',
               lineHeight: 1.1,
@@ -48,11 +48,11 @@ export default function System() {
           {pillars.map(({ n, name, body }) => (
             <div
               key={n}
-              className="bg-cream border border-pebble p-8 md:p-10 flex flex-col gap-5"
+              className="bg-surface border border-border p-8 md:p-10 flex flex-col gap-5"
             >
-              <span className="eyebrow text-earth">{n}</span>
+              <span className="eyebrow">{n}</span>
               <h3
-                className="font-serif text-ink"
+                className="font-serif text-ash"
                 style={{
                   fontSize: 'clamp(1.2rem, 2vw, 1.5rem)',
                   letterSpacing: '-0.015em',
@@ -60,7 +60,7 @@ export default function System() {
               >
                 {name}
               </h3>
-              <p className="text-ink/60 font-sans text-sm md:text-base leading-relaxed">
+              <p className="text-ash/55 font-sans text-sm md:text-base leading-relaxed">
                 {body}
               </p>
             </div>

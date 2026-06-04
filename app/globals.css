@@ -9,7 +9,7 @@
   }
 
   body {
-    @apply bg-cream text-ink font-sans;
+    @apply bg-base text-ash font-sans;
   }
 }
 
@@ -31,6 +31,6 @@
   }
 
   .eyebrow {
-    @apply text-earth font-sans text-xs font-medium tracking-[0.18em] uppercase;
+    @apply text-gold font-sans text-xs font-medium tracking-[0.18em] uppercase;
   }
 }

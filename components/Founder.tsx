@@ -1,6 +1,6 @@
 export default function Founder() {
   return (
-    <section className="bg-cream section-pad">
+    <section className="bg-surface section-pad">
       <div className="wrap">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16 items-start">
           {/* Portrait */}
@@ -8,19 +8,19 @@ export default function Founder() {
             {/*
               TODO: Replace this placeholder with a real photo of Jeremy.
               Dimensions: portrait orientation, approx 4:5 ratio.
-              Drop the image into /public/jeremy.jpg and swap the div below
-              for: <Image src="/jeremy.jpg" alt="Jeremy" width={480} height={600} className="w-full" />
+              Drop the image into /public/jeremy.jpg and swap the div below for:
+              <Image src="/jeremy.jpg" alt="Jeremy" width={480} height={600} className="w-full" />
             */}
-            <div className="aspect-[4/5] bg-stone relative overflow-hidden flex items-end">
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/50 via-transparent to-transparent" />
+            <div className="aspect-[4/5] bg-surface-hi relative overflow-hidden flex items-end">
+              <div className="absolute inset-0 bg-gradient-to-t from-base/70 via-transparent to-transparent" />
               <div className="relative z-10 p-6">
                 <p
-                  className="font-serif text-cream"
+                  className="font-serif text-ash"
                   style={{ fontSize: '1.25rem', letterSpacing: '-0.01em' }}
                 >
                   Jeremy
                 </p>
-                <p className="eyebrow text-cream/55 mt-1">Founder, Groundwork</p>
+                <p className="eyebrow text-gold/60 mt-1">Founder, Groundwork</p>
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@ export default function Founder() {
             <p className="eyebrow mb-8">The builder</p>
 
             <h2
-              className="font-serif text-ink text-balance mb-10"
+              className="font-serif text-ash text-balance mb-10"
               style={{
                 fontSize: 'clamp(1.65rem, 3vw, 2.6rem)',
                 lineHeight: 1.1,
@@ -41,7 +41,7 @@ export default function Founder() {
             </h2>
 
             <div
-              className="space-y-5 text-ink/70 font-sans leading-[1.75]"
+              className="space-y-5 text-ash/60 font-sans leading-[1.75]"
               style={{ fontSize: 'clamp(1rem, 1.5vw, 1.1rem)' }}
             >
               <p>
@@ -59,7 +59,7 @@ export default function Founder() {
                 stay consistent at the gym and people who don't is rarely effort. It's
                 almost always clarity.
               </p>
-              <p className="text-ink font-medium">
+              <p className="text-ash font-medium">
                 Most people were never taught. This is the instruction manual they should
                 have had from the start.
               </p>

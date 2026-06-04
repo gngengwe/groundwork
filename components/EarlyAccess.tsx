@@ -61,47 +61,34 @@ export default function EarlyAccess() {
      *   - Loops (loops.so) — recommended for founder-led products
      *   - ConvertKit / Kit
      *   - Mailchimp
-     *   - A Cloudflare Worker proxying to any of the above
      *
      * Replace the placeholder below with a real fetch:
      *
-     * await fetch('https://api.loops.so/v1/contacts/create', {
+     * await fetch('https://app.loops.so/api/newsletter-form/<YOUR_FORM_ID>', {
      *   method: 'POST',
-     *   headers: {
-     *     Authorization: `Bearer ${process.env.NEXT_PUBLIC_LOOPS_API_KEY}`,
-     *     'Content-Type': 'application/json',
-     *   },
-     *   body: JSON.stringify({
-     *     email,
-     *     userGroup: 'early-access',
-     *     fitnessLevel,
-     *     gymStruggle,
-     *     foodStruggle,
-     *     preferredFormats: selectedFormats.join(', '),
-     *   }),
+     *   headers: { 'Content-Type': 'application/json' },
+     *   body: JSON.stringify({ email, fitnessLevel, gymStruggle, foodStruggle,
+     *     preferredFormats: selectedFormats.join(', ') }),
      * })
      */
 
-    await new Promise(r => setTimeout(r, 700)) // placeholder
+    await new Promise(r => setTimeout(r, 700))
     setLoading(false)
     setSubmitted(true)
   }
 
   if (submitted) {
     return (
-      <section id="early-access" className="bg-dark section-pad">
+      <section id="early-access" className="bg-base section-pad">
         <div className="wrap-narrow text-center">
-          <div className="w-10 h-px bg-earth mx-auto mb-10" />
+          <div className="w-10 h-px bg-gold mx-auto mb-10" />
           <h2
-            className="font-serif text-cream mb-6"
-            style={{
-              fontSize: 'clamp(1.8rem, 3.5vw, 3rem)',
-              letterSpacing: '-0.025em',
-            }}
+            className="font-serif text-ash mb-6"
+            style={{ fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', letterSpacing: '-0.025em' }}
           >
             You're on the list.
           </h2>
-          <p className="text-cream/55 font-sans leading-relaxed max-w-sm mx-auto">
+          <p className="text-ash/50 font-sans leading-relaxed max-w-sm mx-auto">
             We'll be in touch when Groundwork launches. We're building something worth
             the wait.
           </p>
@@ -111,12 +98,12 @@ export default function EarlyAccess() {
   }
 
   return (
-    <section id="early-access" className="bg-dark section-pad">
+    <section id="early-access" className="bg-base section-pad">
       <div className="wrap-narrow">
-        <div className="w-10 h-px bg-earth mb-10" />
+        <div className="w-10 h-px bg-gold mb-10" />
 
         <h2
-          className="font-serif text-cream text-balance mb-4"
+          className="font-serif text-ash text-balance mb-4"
           style={{
             fontSize: 'clamp(1.8rem, 3.5vw, 3rem)',
             lineHeight: 1.1,
@@ -126,7 +113,7 @@ export default function EarlyAccess() {
           Be the first to know when Groundwork launches.
         </h2>
         <p
-          className="text-cream/50 font-sans mb-14"
+          className="text-ash/45 font-sans mb-14"
           style={{ fontSize: 'clamp(1rem, 1.5vw, 1.1rem)' }}
         >
           No spam. Just early access and the occasional update as we build.
@@ -135,10 +122,7 @@ export default function EarlyAccess() {
         <form onSubmit={handleSubmit} className="space-y-8">
           {/* Email */}
           <div>
-            <label
-              htmlFor="email"
-              className="block eyebrow text-cream/50 mb-3"
-            >
+            <label htmlFor="email" className="block eyebrow text-ash/45 mb-3">
               Your email address *
             </label>
             <input
@@ -148,21 +132,16 @@ export default function EarlyAccess() {
               value={email}
               onChange={e => setEmail(e.target.value)}
               placeholder="you@example.com"
-              className="w-full bg-transparent border border-cream/20 text-cream placeholder-cream/25 font-sans px-5 py-4 focus:outline-none focus:border-earth transition-colors duration-200"
+              className="w-full bg-transparent border border-ash/15 text-ash placeholder-ash/25 font-sans px-5 py-4 focus:outline-none focus:border-gold transition-colors duration-200"
             />
           </div>
 
           {/* Optional survey */}
-          <div className="pt-6 border-t border-cream/10 space-y-8">
-            <p className="eyebrow text-cream/35">
-              Optional — helps us build the right thing
-            </p>
+          <div className="pt-6 border-t border-ash/10 space-y-8">
+            <p className="eyebrow text-ash/30">Optional — helps us build the right thing</p>
 
             <div>
-              <label
-                htmlFor="fitnessLevel"
-                className="block eyebrow text-cream/50 mb-3"
-              >
+              <label htmlFor="fitnessLevel" className="block eyebrow text-ash/45 mb-3">
                 Your current gym experience
               </label>
               <div className="relative">
@@ -170,24 +149,17 @@ export default function EarlyAccess() {
                   id="fitnessLevel"
                   value={fitnessLevel}
                   onChange={e => setFitnessLevel(e.target.value)}
-                  className="w-full appearance-none bg-dark-mid border border-cream/20 text-cream/75 font-sans px-5 py-4 focus:outline-none focus:border-earth transition-colors duration-200 cursor-pointer"
+                  className="w-full appearance-none bg-surface border border-ash/15 text-ash/70 font-sans px-5 py-4 focus:outline-none focus:border-gold transition-colors duration-200 cursor-pointer"
                 >
                   <option value="">Select one...</option>
-                  {fitnessLevels.map(l => (
-                    <option key={l} value={l}>{l}</option>
-                  ))}
+                  {fitnessLevels.map(l => <option key={l} value={l}>{l}</option>)}
                 </select>
-                <div className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-cream/35 text-xs">
-                  ▾
-                </div>
+                <div className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-ash/30 text-xs">▾</div>
               </div>
             </div>
 
             <div>
-              <label
-                htmlFor="gymStruggle"
-                className="block eyebrow text-cream/50 mb-3"
-              >
+              <label htmlFor="gymStruggle" className="block eyebrow text-ash/45 mb-3">
                 Biggest gym struggle
               </label>
               <div className="relative">
@@ -195,24 +167,17 @@ export default function EarlyAccess() {
                   id="gymStruggle"
                   value={gymStruggle}
                   onChange={e => setGymStruggle(e.target.value)}
-                  className="w-full appearance-none bg-dark-mid border border-cream/20 text-cream/75 font-sans px-5 py-4 focus:outline-none focus:border-earth transition-colors duration-200 cursor-pointer"
+                  className="w-full appearance-none bg-surface border border-ash/15 text-ash/70 font-sans px-5 py-4 focus:outline-none focus:border-gold transition-colors duration-200 cursor-pointer"
                 >
                   <option value="">Select one...</option>
-                  {gymStruggles.map(s => (
-                    <option key={s} value={s}>{s}</option>
-                  ))}
+                  {gymStruggles.map(s => <option key={s} value={s}>{s}</option>)}
                 </select>
-                <div className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-cream/35 text-xs">
-                  ▾
-                </div>
+                <div className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-ash/30 text-xs">▾</div>
               </div>
             </div>
 
             <div>
-              <label
-                htmlFor="foodStruggle"
-                className="block eyebrow text-cream/50 mb-3"
-              >
+              <label htmlFor="foodStruggle" className="block eyebrow text-ash/45 mb-3">
                 Biggest food struggle
               </label>
               <div className="relative">
@@ -220,21 +185,17 @@ export default function EarlyAccess() {
                   id="foodStruggle"
                   value={foodStruggle}
                   onChange={e => setFoodStruggle(e.target.value)}
-                  className="w-full appearance-none bg-dark-mid border border-cream/20 text-cream/75 font-sans px-5 py-4 focus:outline-none focus:border-earth transition-colors duration-200 cursor-pointer"
+                  className="w-full appearance-none bg-surface border border-ash/15 text-ash/70 font-sans px-5 py-4 focus:outline-none focus:border-gold transition-colors duration-200 cursor-pointer"
                 >
                   <option value="">Select one...</option>
-                  {foodStruggles.map(s => (
-                    <option key={s} value={s}>{s}</option>
-                  ))}
+                  {foodStruggles.map(s => <option key={s} value={s}>{s}</option>)}
                 </select>
-                <div className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-cream/35 text-xs">
-                  ▾
-                </div>
+                <div className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-ash/30 text-xs">▾</div>
               </div>
             </div>
 
             <div>
-              <p className="eyebrow text-cream/50 mb-4">
+              <p className="eyebrow text-ash/45 mb-4">
                 How do you prefer to learn? (choose all that apply)
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -247,8 +208,8 @@ export default function EarlyAccess() {
                       onClick={() => toggleFormat(f)}
                       className={`text-left px-5 py-3.5 border font-sans text-sm transition-colors duration-200 ${
                         active
-                          ? 'border-earth bg-earth/10 text-cream'
-                          : 'border-cream/20 text-cream/55 hover:border-cream/35 hover:text-cream/75'
+                          ? 'border-gold bg-gold/8 text-ash'
+                          : 'border-ash/15 text-ash/50 hover:border-ash/30 hover:text-ash/70'
                       }`}
                     >
                       {f}
@@ -262,7 +223,7 @@ export default function EarlyAccess() {
           <button
             type="submit"
             disabled={loading || !email}
-            className="bg-earth text-cream px-10 py-4 font-sans font-medium text-sm tracking-wide hover:bg-earth/85 transition-colors duration-200 disabled:opacity-40 disabled:cursor-not-allowed"
+            className="bg-gold text-base px-10 py-4 font-sans font-medium text-sm tracking-wide hover:bg-gold/85 transition-colors duration-200 disabled:opacity-40 disabled:cursor-not-allowed"
           >
             {loading ? 'Saving your spot...' : 'Get early access'}
           </button>
