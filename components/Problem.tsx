@@ -6,11 +6,7 @@ export default function Problem() {
 
         <h2
           className="font-serif text-ash text-balance mb-12"
-          style={{
-            fontSize: 'clamp(2rem, 4.5vw, 3.5rem)',
-            lineHeight: 1.08,
-            letterSpacing: '-0.028em',
-          }}
+          style={{ fontSize: 'clamp(2rem, 4.5vw, 3.5rem)', lineHeight: 1.08, letterSpacing: '-0.028em' }}
         >
           You didn't fail the gym.
           <br />
@@ -18,8 +14,8 @@ export default function Problem() {
         </h2>
 
         <div
-          className="space-y-6 text-ash/90 font-sans leading-[1.75]"
-          style={{ fontSize: 'clamp(1rem, 1.6vw, 1.125rem)' }}
+          className="space-y-6 font-sans leading-[1.75]"
+          style={{ fontSize: 'clamp(1rem, 1.6vw, 1.125rem)', color: '#D8D4CE' }}
         >
           <p>
             The gym is one of the most common places people go to change their lives. It
@@ -42,6 +38,35 @@ export default function Problem() {
             Most people who quit the gym were not lazy. They were under-taught. They were
             handed complexity when they needed clarity. Groundwork starts there.
           </p>
+        </div>
+
+        {/* Target person portrait */}
+        <div className="mt-16 pt-12 border-t border-ash/10">
+          <p className="eyebrow mb-8">Who this is for</p>
+
+          <div className="border-l-2 border-gold/40 pl-8 space-y-5 font-sans leading-[1.8]"
+            style={{ fontSize: 'clamp(1rem, 1.5vw, 1.1rem)', color: '#D8D4CE' }}>
+            <p>
+              She joined a gym in January. Went twice in the first week, then once, then
+              stopped. She's still paying the membership.
+            </p>
+            <p>
+              It's not that she stopped wanting to go. She thinks about it most mornings.
+              But every time she drives there she feels a low-level dread she can't quite
+              name. She doesn't know what to do when she gets there. The weights area
+              feels like it belongs to other people. She tried a YouTube workout and
+              couldn't follow the form. She downloaded a fitness app that asked her to
+              input her macros before it would show her a single exercise. She closed it
+              and didn't go back.
+            </p>
+            <p>
+              She's tried. She's not lazy. She just needed someone to explain the gym to
+              her simply. Nobody has.
+            </p>
+            <p className="text-ash font-medium">
+              That person is who Groundwork is built for.
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -34,11 +34,7 @@ export default function System() {
           <p className="eyebrow mb-6">The system</p>
           <h2
             className="font-serif text-ash text-balance max-w-[22ch]"
-            style={{
-              fontSize: 'clamp(1.75rem, 3.5vw, 3rem)',
-              lineHeight: 1.1,
-              letterSpacing: '-0.025em',
-            }}
+            style={{ fontSize: 'clamp(1.75rem, 3.5vw, 3rem)', lineHeight: 1.1, letterSpacing: '-0.025em' }}
           >
             Five parts. One direction. No wasted complexity.
           </h2>
@@ -53,14 +49,14 @@ export default function System() {
               <span className="eyebrow">{n}</span>
               <h3
                 className="font-serif text-ash"
-                style={{
-                  fontSize: 'clamp(1.2rem, 2vw, 1.5rem)',
-                  letterSpacing: '-0.015em',
-                }}
+                style={{ fontSize: 'clamp(1.2rem, 2vw, 1.5rem)', letterSpacing: '-0.015em' }}
               >
                 {name}
               </h3>
-              <p className="text-ash/90 font-sans text-sm md:text-base leading-relaxed">
+              <p
+                className="font-sans text-sm md:text-base leading-relaxed"
+                style={{ color: '#D8D4CE' }}
+              >
                 {body}
               </p>
             </div>

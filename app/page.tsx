@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero'
 import Problem from '@/components/Problem'
 import Opportunity from '@/components/Opportunity'
+import Differentiation from '@/components/Differentiation'
 import Philosophy from '@/components/Philosophy'
 import AppMockup from '@/components/AppMockup'
 import System from '@/components/System'
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <Problem />
       <Opportunity />
+      <Differentiation />
       <Philosophy />
       <AppMockup />
       <System />
